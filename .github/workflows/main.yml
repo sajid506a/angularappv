@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 15.x]
+        node-version: [14.x, 16.x]
 
     steps:
     - name: Checkout repository
@@ -26,6 +26,7 @@ jobs:
 
     - name: Run tests
       run: npm run test
+    - name: COverage
     - uses: 5monkeys/cobertura-action@master
       with:
           path: reports/cobertura-coverage.xml
