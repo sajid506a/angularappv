@@ -99,7 +99,9 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "watch": true
+            "watch": false,
+            "coverage": true
+
           },
           "configurations": {
             "ci": {
