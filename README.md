@@ -7,7 +7,7 @@ version 11.0.0
 
 1. Go to project folder and install dependencies:
  ```sh
- npm install
+ npm install     s
  ```
 
 2. Launch development server, and open `localhost:4200` in your browser:
