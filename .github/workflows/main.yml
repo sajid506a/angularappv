@@ -26,7 +26,7 @@ jobs:
 
     - name: Run tests
       run: npm run test
-    - name: COverage
+    - name: Coverage
     - uses: 5monkeys/cobertura-action@master
       with:
           path: reports/cobertura-coverage.xml
