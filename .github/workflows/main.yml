@@ -2,7 +2,7 @@ on:
   pull_request:
     types: [opened]
     branches:
-      - master
+      - main
 jobs:
   coverage:
     runs-on: ubuntu-latest
