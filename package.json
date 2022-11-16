@@ -20,12 +20,16 @@
     "prettier": "prettier --write \"./src/**/*.{ts,js,html,scss}\"",
     "prettier:check": "prettier --list-different \"./src/**/*.{ts,js,html,scss}\"",
     "postinstall": "npm run prettier -s && husky install",
-    "generate": "ng generate"
+    "generate": "ng generate",
+    "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage"
   },
   "jest": {
     "verbose": true,
-    "collectCoverage":true,
-    "coverageReporters":["cobertura","text"]
+    "collectCoverage": true,
+    "coverageReporters": [
+      "cobertura",
+      "text"
+    ]
   },
   "dependencies": {
     "@angular/animations": "~14.1.3",
